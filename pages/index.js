@@ -1,65 +1,66 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Avatar from '../components/Avatar';
+import {MicrophoneIcon, ViewGridIcon} from '@heroicons/react/solid';
+import Image from 'next/image'
+import {SearchIcon} from '@heroicons/react/outline';
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <div className=''>
+            <Head>
+                <title>
+                    Google Nick 2
+                </title>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+                <link rel='icon' href='/favicon.ico' />
+            </Head>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+            <header className='flex w-full p-5 justify-between text-sm text-gray-700'>
+                <div className='flex space-x-4 items-center'>
+                    <p className='link'>
+                        About
+                    </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                    <p className='link'>
+                        Store
+                    </p>
+                </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                <div className='flex space-x-4 items-center'>
+                    <p className='link'>
+                        Gmail
+                    </p>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                    <p className='link'>
+                        Images
+                    </p>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+                    <ViewGridIcon className='h-9 w-9 p-2 rounded-full hover:bg-gray-100 cursor-pointer' />
+
+                    <Avatar
+                        url='https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/trump_president_avatar_male-512.png'
+                    />
+                </div>
+            </header>
+
+            <form className=''>
+                <Image
+                    src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+                    alt='Google'
+                    width={300}
+                    height={100}
+                />
+
+                <div className='input'>
+                    <SearchIcon className='h-5 mr-3 text-gray-500' />
+
+                    <input className='flex-grow focus:outline-none' type='search' />
+
+                    <MicrophoneIcon className='h-5 mr-3 text-blue-500' />
+                </div>
+            </form>
+
+            {/*FOOTER*/}
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    )
 }
