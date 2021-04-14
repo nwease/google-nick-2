@@ -43,12 +43,12 @@ export default function Home() {
                 </div>
             </header>
 
-            <form className=''>
+            <form className='flex flex-col items-center mt-44 flex-grow'>
                 <Image
                     src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
                     alt='Google'
-                    width={300}
-                    height={100}
+                    width={295}
+                    height={90}
                 />
 
                 <div className='input'>
@@ -57,6 +57,16 @@ export default function Home() {
                     <input className='flex-grow focus:outline-none' type='search' />
 
                     <MicrophoneIcon className='h-5 mr-3 text-blue-500' />
+                </div>
+
+                <div className='flex space-x-4 items-center'>
+                    <button className='btn'>
+                        Search Google
+                    </button>
+
+                    <button className='btn'>
+                        I'm Feeling Lucky
+                    </button>
                 </div>
             </form>
 
