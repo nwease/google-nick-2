@@ -3,10 +3,11 @@ import Avatar from '../components/Avatar';
 import {MicrophoneIcon, ViewGridIcon} from '@heroicons/react/solid';
 import Image from 'next/image'
 import {SearchIcon} from '@heroicons/react/outline';
+import Footer from '../components/Footer';
 
 export default function Home() {
     return (
-        <div className=''>
+        <div className='flex flex-col items-center justify-center h-screen'>
             <Head>
                 <title>
                     Google Nick 2
@@ -43,7 +44,7 @@ export default function Home() {
                 </div>
             </header>
 
-            <form className='flex flex-col items-center mt-44 flex-grow'>
+            <form className='flex flex-col items-center mt-44 flex-grow w-4/5'>
                 <Image
                     src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
                     alt='Google'
@@ -54,12 +55,12 @@ export default function Home() {
                 <div className='input'>
                     <SearchIcon className='h-5 mr-3 text-gray-500' />
 
-                    <input className='flex-grow focus:outline-none' type='search' />
+                    <input className='flex-grow focus:outline-none' type='text' />
 
                     <MicrophoneIcon className='h-5 mr-3 text-blue-500' />
                 </div>
 
-                <div className='flex space-x-4 items-center'>
+                <div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
                     <button className='btn'>
                         Search Google
                     </button>
@@ -70,7 +71,7 @@ export default function Home() {
                 </div>
             </form>
 
-            {/*FOOTER*/}
+            <Footer className='' />
         </div>
     )
 }

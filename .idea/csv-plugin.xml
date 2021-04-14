@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/components/Footer.jsx">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/next.config.js">
           <value>
             <Attribute>

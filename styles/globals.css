@@ -20,7 +20,7 @@
         border
         border-gray-300
         px-5
-        py-2.5
+        py-3
         items-center
         sm:max-w-xl
         lg:max-w-2xl
@@ -30,10 +30,13 @@
         bg-[#f8f9fa]
         p-2
         rounded-md
-        ring-gray-200
+        ring-gray-300
         text-sm
         text-gray-800
         cursor-pointer
         hover:ring-1
+        focus:outline-none
+        active:ring-gray-400
+        hover:shadow-md
     }
 }
