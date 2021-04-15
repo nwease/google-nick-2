@@ -4,8 +4,24 @@ import {MicrophoneIcon, ViewGridIcon} from '@heroicons/react/solid';
 import Image from 'next/image'
 import {SearchIcon} from '@heroicons/react/outline';
 import Footer from '../components/Footer';
+import {useRef} from 'react';
+import {useRouter} from 'next/router'
 
 export default function Home() {
+
+    const router = useRouter();
+
+    const searchInput = useRef(null);
+
+    const search = (e) => {
+        e.preventDefault();
+
+        const term = searchInput.current.value;
+        if (!term) return;
+
+        router.push(`/search?term=${term}`);
+    }
+
     return (
         <div className='flex flex-col items-center justify-center h-screen'>
             <Head>
@@ -13,7 +29,7 @@ export default function Home() {
                     Google Nick 2
                 </title>
 
-                <link rel='icon' href='/favicon.ico' />
+                <link rel='icon' href='/favicon.ico'/>
             </Head>
 
             <header className='flex w-full p-5 justify-between text-sm text-gray-700'>
@@ -36,7 +52,7 @@ export default function Home() {
                         Images
                     </p>
 
-                    <ViewGridIcon className='h-9 w-9 p-2 rounded-full hover:bg-gray-100 cursor-pointer' />
+                    <ViewGridIcon className='h-9 w-9 p-2 rounded-full hover:bg-gray-100 cursor-pointer'/>
 
                     <Avatar
                         url='https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/trump_president_avatar_male-512.png'
@@ -53,25 +69,30 @@ export default function Home() {
                 />
 
                 <div className='input'>
-                    <SearchIcon className='h-5 mr-3 text-gray-500' />
+                    <SearchIcon className='h-5 mr-3 text-gray-500'/>
 
-                    <input className='flex-grow focus:outline-none' type='text' />
+                    <input
+                        ref={searchInput}
+                        className='flex-grow focus:outline-none'
+                        type='text'
+                    />
 
-                    <MicrophoneIcon className='h-5 mr-3 text-blue-500' />
+                    <MicrophoneIcon className='h-5 mr-3 text-blue-500'/>
                 </div>
 
-                <div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
-                    <button className='btn'>
+                <div
+                    className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
+                    <button onClick={search} className='btn'>
                         Search Google
                     </button>
 
-                    <button className='btn'>
+                    <button onClick={search} className='btn'>
                         I'm Feeling Lucky
                     </button>
                 </div>
             </form>
 
-            <Footer className='' />
+            <Footer className=''/>
         </div>
     )
 }

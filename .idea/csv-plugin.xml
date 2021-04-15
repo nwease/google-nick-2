@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/components/Header.jsx">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/next.config.js">
           <value>
             <Attribute>
@@ -35,6 +42,13 @@
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/pages/search.js">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
             </Attribute>
           </value>
         </entry>
