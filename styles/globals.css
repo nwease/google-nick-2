@@ -18,7 +18,7 @@
         max-w-md
         rounded-full
         border
-        border-gray-300
+        border-gray-200
         px-5
         py-3
         items-center
@@ -38,5 +38,17 @@
         focus:outline-none
         active:ring-gray-400
         hover:shadow-md
+    }
+    .headerIcon {
+        @apply
+        h-6
+        mr-3
+        text-gray-500
+        cursor-pointer
+        transition
+        duration-100
+        transform
+        hover:scale-125
+        sm:mr-3
     }
 }

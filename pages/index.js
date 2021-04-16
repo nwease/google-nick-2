@@ -10,7 +10,6 @@ import {useRouter} from 'next/router'
 export default function Home() {
 
     const router = useRouter();
-
     const searchInput = useRef(null);
 
     const search = (e) => {
@@ -64,12 +63,12 @@ export default function Home() {
                 <Image
                     src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
                     alt='Google'
-                    width={295}
-                    height={90}
+                    width={290}
+                    height={95}
                 />
 
                 <div className='input'>
-                    <SearchIcon className='h-5 mr-3 text-gray-500'/>
+                    <SearchIcon className='headerIcon text-gray-500'/>
 
                     <input
                         ref={searchInput}
@@ -77,7 +76,7 @@ export default function Home() {
                         type='text'
                     />
 
-                    <MicrophoneIcon className='h-5 mr-3 text-blue-500'/>
+                    <MicrophoneIcon className='headerIcon text-blue-500'/>
                 </div>
 
                 <div
@@ -92,7 +91,7 @@ export default function Home() {
                 </div>
             </form>
 
-            <Footer className=''/>
+            <Footer />
         </div>
     )
 }
