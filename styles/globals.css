@@ -42,7 +42,6 @@
     .headerIcon {
         @apply
         h-6
-        mr-3
         text-gray-500
         cursor-pointer
         transition
