@@ -61,7 +61,6 @@ function Header() {
                 />
             </div>
 
-        {/*HEADEROPTIONS*/}
             <HeaderOptions />
         </header>
     );

@@ -50,4 +50,18 @@
         hover:scale-125
         sm:mr-3
     }
+    .headerOptions {
+        @apply
+        mt-5
+        flex
+        w-full
+        text-gray-700
+        justify-evenly
+        text-sm
+        lg:text-base
+        lg:justify-start
+        lg:space-x-36
+        lg:pl-52
+        border-b-[1px]
+    }
 }

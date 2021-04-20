@@ -31,6 +31,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/components/Option.jsx">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/keys.js">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/next.config.js">
           <value>
             <Attribute>
