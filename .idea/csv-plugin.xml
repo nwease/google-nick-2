@@ -80,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/response.js">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/styles/globals.css">
           <value>
             <Attribute>
