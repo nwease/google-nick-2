@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/components/PaginationButtons.jsx">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/keys.js">
           <value>
             <Attribute>

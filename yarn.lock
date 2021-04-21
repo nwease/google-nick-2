@@ -151,6 +151,11 @@
     "postcss-selector-parser" "^6.0.4"
     "quick-lru" "^5.1.1"
 
+"@tailwindcss/line-clamp@^0.2.0":
+  "integrity" "sha512-+jXSdRK3/9V/BCPCr+iNpMMhxWMMv62vn/AS2b3/ClmueGuhCijW3bUwO1IiHnE7uCaF74Sli8jUCv9djwvpLg=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/line-clamp/-/line-clamp-0.2.0.tgz"
+  "version" "0.2.0"
+
 "@types/node@*":
   "integrity" "sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-14.14.37.tgz"
