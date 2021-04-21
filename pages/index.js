@@ -74,6 +74,7 @@ export default function Home() {
                         ref={searchInput}
                         className='flex-grow focus:outline-none'
                         type='text'
+                        defaultValue={router.query.term}
                     />
 
                     <MicrophoneIcon className='headerIcon text-blue-500'/>
