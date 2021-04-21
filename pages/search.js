@@ -22,7 +22,6 @@ function Search({results}) {
                 <Header />
             </header>
 
-        {/*SEARCH RESULTS*/}
             <SearchResults results={results} />
         </div>
     );
